@@ -1,0 +1,64 @@
+[
+  {
+    "output": "# One-Day Meal Plan for Marathon Race Day Preparation\n\nHere is a one-day meal plan for an athlete aiming to maximize carbohydrate loading and caloric intake for marathon race day preparation:\n\n* **Calorie Target:** Approximately 3,500 calories\n* **Macronutrient Breakdown:** Protein (140g), Fat (100g), Carbs (520g)\n\n**Meal Plan:**\n\n* **Breakfast (7:00 AM):** Pancakes (3 medium, 150g) with maple syrup (60g), 2 eggs (100g), turkey bacon (60g), and orange juice (250g).\n    * Protein: 25g, Fat: 18g, Carbs: 85g\n\n* **Mid-Morning Snack (10:00 AM):** Banana (150g) with peanut butter (40g) and granola bar (60g).\n    * Protein: 12g, Fat: 18g, Carbs: 70g\n\n* **Lunch (1:00 PM):** Pasta with marinara sauce (250g cooked pasta, 150g sauce), ground beef (120g), garlic bread (80g), and side salad with olive oil dressing (30g oil).\n    * Protein: 35g, Fat: 22g, Carbs: 120g\n\n* **Afternoon Snack (4:00 PM):** Energy drink (500g sports drink with electrolytes), rice cakes (50g) with honey (30g).\n    * Protein: 8g, Fat: 2g, Carbs: 95g\n\n* **Dinner (7:00 PM):** Grilled chicken breast (150g), white rice (200g cooked), steamed carrots (100g), and butter (15g).\n    * Protein: 45g, Fat: 20g, Carbs: 95g\n\n* **Evening Snack (9:00 PM):** Bagel (80g) with jam (40g) and low-fat milk (240g).\n    * Protein: 15g, Fat: 20g, Carbs: 80g\n\nThis meal plan prioritizes easily digestible, carbohydrate-rich foods to maximize glycogen storage while providing adequate protein for muscle recovery and repair. The emphasis on simple and complex carbohydrates supports sustained energy for marathon endurance performance.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180 cm",
+        "weight": "72 kg",
+        "goal": "Marathon race day preparation with carbohydrate loading and maximum caloric intake for endurance performance",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Meal plan contains exactly one day of meals with sufficient calories (3500-4500 kcal) for a marathon runner",
+        "Includes high carbohydrate content (60-70% of total calories) to support endurance performance",
+        "Provides 3 main meals and 2-3 snacks distributed throughout the day",
+        "All meals are practical, digestible options suitable for pre-race preparation"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single meal plan for a single athlete",
+      "scenario": "Testing with a high-endurance athlete (marathon runner) requiring maximum caloric intake and carbohydrate loading for performance"
+    },
+    "score": 8,
+    "reasoning": "The solution fully satisfies all three mandatory requirements with clear presentation of daily calories, macronutrient breakdown, and detailed meals with portions and timing. It meets 4 of 4 secondary criteria: provides exactly one day of meals, achieves 3,500 kcal (within range), delivers 59.4% carbohydrates (marginally below 60-70% target), and includes 3 main meals plus 3 snacks with practical, digestible pre-race foods. The meal plan is well-timed and appropriately structured for marathon preparation. Minor optimization opportunities exist in total caloric volume and fat content, but these do not constitute failures against stated criteria."
+  },
+  {
+    "output": "# One-Day Meal Plan for Muscle Gain and Strength Improvement\n\nHere is a one-day meal plan for an athlete aiming to build muscle and improve strength:\n\n* **Calorie Target:** Approximately 3,200 calories\n* **Macronutrient Breakdown:** Protein (180g), Fat (100g), Carbs (420g)\n\n**Meal Plan:**\n\n* **Breakfast (7:00 AM):** Scrambled eggs (3 whole eggs, 150g) with whole wheat toast (60g) and avocado (50g). Orange juice (240g).\n    * Protein: 25g, Fat: 20g, Carbs: 40g\n\n* **Mid-Morning Snack (10:00 AM):** Banana (150g) with natural peanut butter (30g) and whole grain crackers (40g).\n    * Protein: 12g, Fat: 16g, Carbs: 60g\n\n* **Lunch (1:00 PM):** Grilled chicken breast (180g) with brown rice (150g cooked) and roasted vegetables including broccoli (100g), carrots (50g), and olive oil (15g).\n    * Protein: 50g, Fat: 18g, Carbs: 95g\n\n* **Pre-Workout Snack (3:30 PM):** Rice cakes (50g) with honey (20g) and whey protein powder mixed with water (30g powder).\n    * Protein: 25g, Fat: 2g, Carbs: 75g\n\n* **Dinner (7:00 PM):** Lean ground beef (180g, 90/10) with sweet potato (200g baked) and mixed green salad (150g) with balsamic vinaigrette (20g).\n    * Protein: 40g, Fat: 20g, Carbs: 95g\n\n* **Evening Snack (9:00 PM):** Greek yogurt (200g, full-fat) with granola (40g) and blueberries (80g).\n    * Protein: 20g, Fat: 12g, Carbs: 55g\n\n**Note:** This meal plan emphasizes high-quality protein sources, complex carbohydrates, and healthy fats to support muscle growth, recovery, and strength gains. Adjust portions based on individual response and training intensity.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180 cm",
+        "weight": "85 kg",
+        "goal": "muscle gain and strength improvement",
+        "restrictions": "none"
+      },
+      "solution_criteria": [
+        "Meal plan covers one full day with at least 4 meals/snacks",
+        "Protein distributed evenly across meals (minimum 25g per meal)",
+        "Total daily protein intake supports muscle recovery (approximately 1.6-2.2g per kg body weight)",
+        "Meals are practical and compact to prepare for an athlete's schedule"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single meal plan for a single athlete",
+      "scenario": "Testing with a strength-focused athlete (weightlifter) emphasizing protein distribution and muscle recovery across meals"
+    },
+    "score": 6,
+    "reasoning": "The solution meets all three mandatory requirements with daily caloric total, complete macronutrient breakdown, and detailed meals with portions and timing. However, it violates a secondary criterion by failing to distribute protein evenly across meals\u2014the mid-morning snack contains only 12g protein, well below the stated 25g minimum per meal. While the overall daily protein intake is appropriate for muscle gain, the uneven distribution undermines the meal plan's effectiveness for consistent amino acid availability throughout the day. The solution is otherwise well-structured and practical."
+  },
+  {
+    "output": "# One-Day Meal Plan for Competitive Swimmer\n\nHere is a one-day meal plan optimized for competitive swimming training with 2 daily pool sessions:\n\n* **Calorie Target:** Approximately 3,200 calories\n* **Macronutrient Breakdown:** Protein (165g), Fat (85g), Carbs (420g)\n\n---\n\n## **Meal Plan:**\n\n* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with honey (20g), sliced banana (120g), and almond butter (25g). Orange juice (250ml).\n    * Protein: 16g, Fat: 12g, Carbs: 95g\n\n* **Mid-Morning Snack (9:30 AM):** Energy bar (50g) with dates (40g) and almonds (20g).\n    * Protein: 8g, Fat: 10g, Carbs: 55g\n\n* **Light Pre-Training Snack (11:00 AM)** *(2 hours before first pool session at 1:00 PM)*: Sports drink (400ml) with electrolytes and glucose.\n    * Protein: 0g, Fat: 0g, Carbs: 50g\n\n* **Post-Training Snack (2:30 PM)** *(30 minutes after first session)*: Smoothie made with dairy-free protein powder (30g), banana (100g), oat milk (250ml), and honey (15g).\n    * Protein: 30g, Fat: 5g, Carbs: 65g\n\n* **Lunch (4:00 PM):** Grilled chicken breast (150g), brown rice (120g cooked), steamed asparagus (150g), olive oil (10ml).\n    * Protein: 45g, Fat: 12g, Carbs: 70g\n\n* **Light Pre-Training Snack (5:30 PM)** *(2 hours before second pool session at 7:30 PM)*: Rice cakes (40g) with jam (20g) and coconut water (300ml).\n    * Protein: 2g, Fat: 1g, Carbs: 65g\n\n* **Post-Training Dinner (8:30 PM)** *(30 minutes after second session)*: Baked salmon (160g), sweet potato (200g), green beans (150g), olive oil (10ml).\n    * Protein: 40g, Fat: 20g, Carbs: 50g\n\n* **Evening Snack (10:00 PM):** Rice pudding made with oat milk (200g) and raisins (25g).\n    * Protein: 6g, Fat: 15g, Carbs: 75g\n\n---\n\n**Key Features:**\n- Timing strategically avoids solid foods 2 hours before water training\n- All dairy products replaced with lactose-free alternatives (oat milk, dairy-free protein powder)\n- No shellfish included\n- High carbohydrate intake (420g) supports energy for dual training sessions\n- Adequate protein (165g) supports muscle recovery\n- Post-training meals prioritize fast-digesting carbs and protein for optimal recovery",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "72 kg",
+        "goal": "Optimize energy and recovery for competitive swimming training with 2 pool sessions daily",
+        "restrictions": "No solid foods 2 hours before water training, lactose intolerant, no shellfish"
+      },
+      "solution_criteria": [
+        "Meal plan spans exactly 1 day with timing suitable for swimmer (meals/snacks positioned away from 2-hour pre-training window)",
+        "All foods are easily digestible and safe for lactose-intolerant athlete with no shellfish",
+        "Plan is compact and concise (minimal verbosity, clear formatting)"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single meal plan for a single athlete",
+      "scenario": "Testing with a sport-specific athlete (swimmer) with restricted meal timing due to water-based training and need for easily digestible foods"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all three mandatory requirements with clear daily caloric target, detailed macronutrient breakdown, and precisely timed meals with exact portions. The meal timing strategically avoids the 2-hour pre-training window, with appropriate light snacks (sports drink, rice cakes) positioned 2 hours before each session and more substantial meals positioned safely outside this window. All dietary restrictions are properly accommodated throughout. The plan is well-formatted and reasonably concise. A minor arithmetic discrepancy in fat totals and slight redundancy in presentation prevent a perfect score, but these are minor issues that don't undermine the core quality of the meal plan."
+  }
+]

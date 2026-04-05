@@ -1,0 +1,49 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "72 kg",
+      "goal": "Marathon race day preparation with carbohydrate loading and maximum caloric intake for endurance performance",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan contains exactly one day of meals with sufficient calories (3500-4500 kcal) for a marathon runner",
+      "Includes high carbohydrate content (60-70% of total calories) to support endurance performance",
+      "Provides 3 main meals and 2-3 snacks distributed throughout the day",
+      "All meals are practical, digestible options suitable for pre-race preparation"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring maximum caloric intake and carbohydrate loading for performance"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "85 kg",
+      "goal": "muscle gain and strength improvement",
+      "restrictions": "none"
+    },
+    "solution_criteria": [
+      "Meal plan covers one full day with at least 4 meals/snacks",
+      "Protein distributed evenly across meals (minimum 25g per meal)",
+      "Total daily protein intake supports muscle recovery (approximately 1.6-2.2g per kg body weight)",
+      "Meals are practical and compact to prepare for an athlete's schedule"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single meal plan for a single athlete",
+    "scenario": "Testing with a strength-focused athlete (weightlifter) emphasizing protein distribution and muscle recovery across meals"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "72 kg",
+      "goal": "Optimize energy and recovery for competitive swimming training with 2 pool sessions daily",
+      "restrictions": "No solid foods 2 hours before water training, lactose intolerant, no shellfish"
+    },
+    "solution_criteria": [
+      "Meal plan spans exactly 1 day with timing suitable for swimmer (meals/snacks positioned away from 2-hour pre-training window)",
+      "All foods are easily digestible and safe for lactose-intolerant athlete with no shellfish",
+      "Plan is compact and concise (minimal verbosity, clear formatting)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single meal plan for a single athlete",
+    "scenario": "Testing with a sport-specific athlete (swimmer) with restricted meal timing due to water-based training and need for easily digestible foods"
+  }
+]

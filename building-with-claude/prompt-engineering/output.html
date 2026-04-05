@@ -1,0 +1,270 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">7.7 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">66.7%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing with a high-endurance athlete (marathon runner) requiring maximum caloric intake and carbohydrate loading for performance</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 72 kg<br><strong>goal:</strong> Marathon race day preparation with carbohydrate loading and maximum caloric intake for endurance performance<br><strong>restrictions:</strong> None</td>
+                <td class="criteria">• Meal plan contains exactly one day of meals with sufficient calories (3500-4500 kcal) for a marathon runner<br>• Includes high carbohydrate content (60-70% of total calories) to support endurance performance<br>• Provides 3 main meals and 2-3 snacks distributed throughout the day<br>• All meals are practical, digestible options suitable for pre-race preparation</td>
+                <td class="output"><pre># One-Day Meal Plan for Marathon Race Day Preparation
+
+Here is a one-day meal plan for an athlete aiming to maximize carbohydrate loading and caloric intake for marathon race day preparation:
+
+* **Calorie Target:** Approximately 3,500 calories
+* **Macronutrient Breakdown:** Protein (140g), Fat (100g), Carbs (520g)
+
+**Meal Plan:**
+
+* **Breakfast (7:00 AM):** Pancakes (3 medium, 150g) with maple syrup (60g), 2 eggs (100g), turkey bacon (60g), and orange juice (250g).
+    * Protein: 25g, Fat: 18g, Carbs: 85g
+
+* **Mid-Morning Snack (10:00 AM):** Banana (150g) with peanut butter (40g) and granola bar (60g).
+    * Protein: 12g, Fat: 18g, Carbs: 70g
+
+* **Lunch (1:00 PM):** Pasta with marinara sauce (250g cooked pasta, 150g sauce), ground beef (120g), garlic bread (80g), and side salad with olive oil dressing (30g oil).
+    * Protein: 35g, Fat: 22g, Carbs: 120g
+
+* **Afternoon Snack (4:00 PM):** Energy drink (500g sports drink with electrolytes), rice cakes (50g) with honey (30g).
+    * Protein: 8g, Fat: 2g, Carbs: 95g
+
+* **Dinner (7:00 PM):** Grilled chicken breast (150g), white rice (200g cooked), steamed carrots (100g), and butter (15g).
+    * Protein: 45g, Fat: 20g, Carbs: 95g
+
+* **Evening Snack (9:00 PM):** Bagel (80g) with jam (40g) and low-fat milk (240g).
+    * Protein: 15g, Fat: 20g, Carbs: 80g
+
+This meal plan prioritizes easily digestible, carbohydrate-rich foods to maximize glycogen storage while providing adequate protein for muscle recovery and repair. The emphasis on simple and complex carbohydrates supports sustained energy for marathon endurance performance.</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">The solution fully satisfies all three mandatory requirements with clear presentation of daily calories, macronutrient breakdown, and detailed meals with portions and timing. It meets 4 of 4 secondary criteria: provides exactly one day of meals, achieves 3,500 kcal (within range), delivers 59.4% carbohydrates (marginally below 60-70% target), and includes 3 main meals plus 3 snacks with practical, digestible pre-race foods. The meal plan is well-timed and appropriately structured for marathon preparation. Minor optimization opportunities exist in total caloric volume and fat content, but these do not constitute failures against stated criteria.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a strength-focused athlete (weightlifter) emphasizing protein distribution and muscle recovery across meals</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 85 kg<br><strong>goal:</strong> muscle gain and strength improvement<br><strong>restrictions:</strong> none</td>
+                <td class="criteria">• Meal plan covers one full day with at least 4 meals/snacks<br>• Protein distributed evenly across meals (minimum 25g per meal)<br>• Total daily protein intake supports muscle recovery (approximately 1.6-2.2g per kg body weight)<br>• Meals are practical and compact to prepare for an athlete's schedule</td>
+                <td class="output"><pre># One-Day Meal Plan for Muscle Gain and Strength Improvement
+
+Here is a one-day meal plan for an athlete aiming to build muscle and improve strength:
+
+* **Calorie Target:** Approximately 3,200 calories
+* **Macronutrient Breakdown:** Protein (180g), Fat (100g), Carbs (420g)
+
+**Meal Plan:**
+
+* **Breakfast (7:00 AM):** Scrambled eggs (3 whole eggs, 150g) with whole wheat toast (60g) and avocado (50g). Orange juice (240g).
+    * Protein: 25g, Fat: 20g, Carbs: 40g
+
+* **Mid-Morning Snack (10:00 AM):** Banana (150g) with natural peanut butter (30g) and whole grain crackers (40g).
+    * Protein: 12g, Fat: 16g, Carbs: 60g
+
+* **Lunch (1:00 PM):** Grilled chicken breast (180g) with brown rice (150g cooked) and roasted vegetables including broccoli (100g), carrots (50g), and olive oil (15g).
+    * Protein: 50g, Fat: 18g, Carbs: 95g
+
+* **Pre-Workout Snack (3:30 PM):** Rice cakes (50g) with honey (20g) and whey protein powder mixed with water (30g powder).
+    * Protein: 25g, Fat: 2g, Carbs: 75g
+
+* **Dinner (7:00 PM):** Lean ground beef (180g, 90/10) with sweet potato (200g baked) and mixed green salad (150g) with balsamic vinaigrette (20g).
+    * Protein: 40g, Fat: 20g, Carbs: 95g
+
+* **Evening Snack (9:00 PM):** Greek yogurt (200g, full-fat) with granola (40g) and blueberries (80g).
+    * Protein: 20g, Fat: 12g, Carbs: 55g
+
+**Note:** This meal plan emphasizes high-quality protein sources, complex carbohydrates, and healthy fats to support muscle growth, recovery, and strength gains. Adjust portions based on individual response and training intensity.</pre></td>
+                <td class="score-col"><span class="score score-medium">6</span></td>
+                <td class="reasoning">The solution meets all three mandatory requirements with daily caloric total, complete macronutrient breakdown, and detailed meals with portions and timing. However, it violates a secondary criterion by failing to distribute protein evenly across meals—the mid-morning snack contains only 12g protein, well below the stated 25g minimum per meal. While the overall daily protein intake is appropriate for muscle gain, the uneven distribution undermines the meal plan's effectiveness for consistent amino acid availability throughout the day. The solution is otherwise well-structured and practical.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a sport-specific athlete (swimmer) with restricted meal timing due to water-based training and need for easily digestible foods</td>
+                <td class="prompt-inputs"><strong>height:</strong> 178 cm<br><strong>weight:</strong> 72 kg<br><strong>goal:</strong> Optimize energy and recovery for competitive swimming training with 2 pool sessions daily<br><strong>restrictions:</strong> No solid foods 2 hours before water training, lactose intolerant, no shellfish</td>
+                <td class="criteria">• Meal plan spans exactly 1 day with timing suitable for swimmer (meals/snacks positioned away from 2-hour pre-training window)<br>• All foods are easily digestible and safe for lactose-intolerant athlete with no shellfish<br>• Plan is compact and concise (minimal verbosity, clear formatting)</td>
+                <td class="output"><pre># One-Day Meal Plan for Competitive Swimmer
+
+Here is a one-day meal plan optimized for competitive swimming training with 2 daily pool sessions:
+
+* **Calorie Target:** Approximately 3,200 calories
+* **Macronutrient Breakdown:** Protein (165g), Fat (85g), Carbs (420g)
+
+---
+
+## **Meal Plan:**
+
+* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with honey (20g), sliced banana (120g), and almond butter (25g). Orange juice (250ml).
+    * Protein: 16g, Fat: 12g, Carbs: 95g
+
+* **Mid-Morning Snack (9:30 AM):** Energy bar (50g) with dates (40g) and almonds (20g).
+    * Protein: 8g, Fat: 10g, Carbs: 55g
+
+* **Light Pre-Training Snack (11:00 AM)** *(2 hours before first pool session at 1:00 PM)*: Sports drink (400ml) with electrolytes and glucose.
+    * Protein: 0g, Fat: 0g, Carbs: 50g
+
+* **Post-Training Snack (2:30 PM)** *(30 minutes after first session)*: Smoothie made with dairy-free protein powder (30g), banana (100g), oat milk (250ml), and honey (15g).
+    * Protein: 30g, Fat: 5g, Carbs: 65g
+
+* **Lunch (4:00 PM):** Grilled chicken breast (150g), brown rice (120g cooked), steamed asparagus (150g), olive oil (10ml).
+    * Protein: 45g, Fat: 12g, Carbs: 70g
+
+* **Light Pre-Training Snack (5:30 PM)** *(2 hours before second pool session at 7:30 PM)*: Rice cakes (40g) with jam (20g) and coconut water (300ml).
+    * Protein: 2g, Fat: 1g, Carbs: 65g
+
+* **Post-Training Dinner (8:30 PM)** *(30 minutes after second session)*: Baked salmon (160g), sweet potato (200g), green beans (150g), olive oil (10ml).
+    * Protein: 40g, Fat: 20g, Carbs: 50g
+
+* **Evening Snack (10:00 PM):** Rice pudding made with oat milk (200g) and raisins (25g).
+    * Protein: 6g, Fat: 15g, Carbs: 75g
+
+---
+
+**Key Features:**
+- Timing strategically avoids solid foods 2 hours before water training
+- All dairy products replaced with lactose-free alternatives (oat milk, dairy-free protein powder)
+- No shellfish included
+- High carbohydrate intake (420g) supports energy for dual training sessions
+- Adequate protein (165g) supports muscle recovery
+- Post-training meals prioritize fast-digesting carbs and protein for optimal recovery</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all three mandatory requirements with clear daily caloric target, detailed macronutrient breakdown, and precisely timed meals with exact portions. The meal timing strategically avoids the 2-hour pre-training window, with appropriate light snacks (sports drink, rice cakes) positioned 2 hours before each session and more substantial meals positioned safely outside this window. All dietary restrictions are properly accommodated throughout. The plan is well-formatted and reasonably concise. A minor arithmetic discrepancy in fat totals and slight redundancy in presentation prevent a perfect score, but these are minor issues that don't undermine the core quality of the meal plan.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    
